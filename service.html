@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>PepeCoin</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">	
+<!-- bootstrap css -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!-- style css -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- Responsive-->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- fevicon -->
+<link rel="icon" href="images/fevicon.png" type="image/gif" />
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<!-- Tweaks for older IEs-->
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<!-- owl stylesheets --> 
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+<script src="./node_modules/web3/dist/web3.min.js"></script>
+</head>
+<!-- body -->
+<body>
+	<div class="header_main">
+		<div class="container">
+			<div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+		</div>
+	</div>
+	</div>
+	<div class="header">
+		<div class="container">
+        <!--  header inner -->
+            <div class="col-sm-12">
+                 
+                 <div class="menu-area">
+                    <nav class="navbar navbar-expand-lg ">
+                        <!-- <a class="navbar-brand" href="#">Menu</a> -->
+<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                       <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                               <li class="nav-item active">
+                                <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a> </li>
+                               <li class="nav-item">
+                                <a class="nav-link" href="about.html">TEAM</a></li>
+                               <li class="nav-item">
+                                <a class="nav-link" href="service.html">PEPE COIN</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <!-- end header end -->
+    <!--services start--> 
+<div class="section_service_main">
+    <div class="section_service_2">
+        <h1 class="service_text">Pepe Coin System</h1>
+    </div>
+    <div class="service_main">
+    	<div class="container">
+    		<div class="row">
+    		    <div class="col-md-6">
+    		    	<div class="written_text">
+    		    			<h1 class="written_text">Total Supply</h1>
+    		    			<p id="suppVal">0.0 PP</p>
+                            <div class="btn_main">
+                            <button type="button" class="btn btn-dark btn-lg" id="supbtn">Check Supply</button>
+                            </div>
+    		    	</div>
+                    <div class="written_text">
+                            <h1 class="written_text">Balance Address</h1>
+                            <div class="input_main">
+                             <div class="form-group">
+                              <input type="text" class="email-bt" placeholder="Address" name="Address" id="bAddr">
+                              
+                            </div>
+                        </div>
+                        <br>
+                            <div class="btn_main">
+                            <p id="balance"></p>
+                            <button type="button" class="btn btn-dark btn-lg" id="balancebtn">Check Balance</button>
+                            </div>
+                    </div>
+
+    		    	</div>
+    		    <div class="col-md-6">
+    		    	<div class="written_text">
+    		    			<h1 class="written_text">Transact Address</h1>
+                             <div class="input_main">
+                             <div class="form-group">
+                              <input type="text" class="email-bt" placeholder="Address" name="Address" id="approveAddr">
+                            </div>
+                        </div>
+                        <br>
+                             <div class="input_main">
+                             <div class="form-group">
+                              <input type="text" class="email-bt" placeholder="Amount" name="Amount" id="approveAmt">
+                            </div>
+                        </div>
+                        <br>
+                            <div class="btn_main">
+                            <p id="approveHash" style="position: relative; left: 0%;"></p>
+                            <button type="button" class="btn btn-dark btn-lg" id="approvebtn">Confirm</button>
+                            
+                            </div>
+    		    			
+    		    		</div>
+                        
+                        
+                        
+                            
+                        </div>
+                         <div class="col-md-12">
+                    <div class="written_text">
+                            <h1 class="written_text">Transfer</h1>
+                             <div class="input_main">
+                             <div class="form-group">
+                              <input type="text" class="email-bt" placeholder="From Address" name="FromAddress" id="transfromAddr">
+                            </div>
+                        </div>
+                        <br>
+                             <div class="input_main">
+                             <div class="form-group">
+                              <input type="text" class="email-bt" placeholder="To Address" name="ToAddress" id="transtoAddr">
+                            </div>
+                        </div>
+                        <br>
+                             <div class="input_main">
+                             <div class="form-group">
+                              <input type="text" class="email-bt" placeholder="Amount" name="Amount" id="transAmt">
+                            </div>
+                        </div>
+                        <br>
+                            <div class="btn_main">
+                            <p id="transferHash"></p>
+                            <button type="button" class="btn btn-dark btn-lg" id="transbtn">Transfer</button>
+                            </div>
+                            
+                        </div>
+
+                        <button type="button" class="btn btn-dark btn-lg" id="historialbtn">Check latest transactions</button>
+                        <a id="historial"></a>
+
+                        <button type="button" class="btn btn-dark btn-lg" id="ownersbtn">Check Top PP Owners</button>
+                        <a id="owners"></a>
+                       
+                            
+                        </div>
+    		    	</div>
+    		    </div>
+    		</div>
+        </div>
+    	</div>	  
+	</div>
+</div>	
+    <!--services end -->
+     <!--Contact_section start -->
+    <div class="contact_main">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="touch_text">Contact Us</h1>
+                </div>
+            </div>
+        </div>
+        <div class="contact_section_2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="map_icon">
+                            <img src="images/map-icon.png" style="max-width: 100%;padding-left: 30px; ">
+                            <p class="email-text"><a href="#">Universidad del Valle de Guatemala<br>Campus Central</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="map_icon">
+                            <img src="images/email-icon.png" style="max-width: 100%; padding-left: 30px;">
+                            <p class="email-text"><a href="#">ret16339@uvg.edu.gt<br>per16362@uvg.edu.gt<br>arr16774@uvg.edu.gt</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--Contact_section end -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="copyright_text">© 2021 All Rights Reserved. <a href="https://html.design">Tópicos Avanzados a computación 2</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+
+      <script>
+
+        if (typeof window.ethereum !== 'undefined'){
+            console.log("Metamask installed!")
+            web3 = new Web3(window.ethereum);
+            window.ethereum.enable()
+        }else{
+            web3 = new Web3(new Web3.providers.HttpProvider("localhost:8545"));
+        }
+
+        
+
+        var PepeCoinContract = new web3.eth.Contract([
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "tokenOwner",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "spender",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "tokens",
+				"type": "uint256"
+			}
+		],
+		"name": "Approval",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "from",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "to",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "tokens",
+				"type": "uint256"
+			}
+		],
+		"name": "Transfer",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "tokenOwner",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "spender",
+				"type": "address"
+			}
+		],
+		"name": "allowance",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "remaining",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "spender",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "tokens",
+				"type": "uint256"
+			}
+		],
+		"name": "approve",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "success",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "tokenOwner",
+				"type": "address"
+			}
+		],
+		"name": "balanceOf",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "balance",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "totalSupply",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "to",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "tokens",
+				"type": "uint256"
+			}
+		],
+		"name": "transfer",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "success",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "from",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "to",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "tokens",
+				"type": "uint256"
+			}
+		],
+		"name": "transferFrom",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "success",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+], '0xbc1F3Ec142dA3031EEeD2AD36EB70759A408f59A');
+
+        web3.eth.getAccounts().then(console.log);
+        
+        //Total Supply
+        $("#supbtn").click(async function(){
+            var accounts = await ethereum.request({method: 'eth_requestAccounts'});
+            PepeCoinContract.methods.totalSupply().call({from: accounts[0]}, function(error, result){
+                if(!error){
+                    $("#suppVal").html(result+" PP")
+                }else{
+                    console.log(error)
+                }
+            });
+        })
+
+        //Balance of Address
+        $("#balancebtn").click(async function(){
+            var accounts = await ethereum.request({method: 'eth_requestAccounts'});
+            PepeCoinContract.methods.balanceOf($("#bAddr").val()).call({from: accounts[0]}, function(error, result){
+                if(!error){
+                    $("#balance").html(result+ " PP")
+                }else{
+                    console.log(error)
+                }
+                
+            });
+        })
+
+        //Approve Address
+        $("#approvebtn").click(async function(){
+            var accounts = await ethereum.request({method: 'eth_requestAccounts'});
+            console.log(accounts)
+
+            PepeCoinContract.methods.transfer($("#approveAddr").val(), $("#approveAmt").val()).send({from: accounts[0], value: web3.utils.toWei('0', 'ether'), gas: 0, gasPrice: 0}, function(error, transHash){
+                if(!error){
+                    $("#approveHash").html("Transaction Hash: " + transHash)
+                }else{
+                    console.log(error)
+                    console.log(typeof($("#approveAddr").val()))
+                }
+            });
+        })
+
+        //Transfer
+        $("#transbtn").click(async function(){
+            const accounts = await ethereum.request({method: 'eth_requestAccounts'});
+            console.log(accounts)
+
+            /*PepeCoinContract.methods.balanceOf($("#transfromAddr").val()).call({from: accounts[0]}, function(error, result){
+                if(!error){
+                    console.log("***************************************")
+                    console.log(result)
+                    console.log("***************************************")
+                }else{
+                    console.log(error)
+                }
+                
+            });*/
+
+            PepeCoinContract.methods.transferFrom($("#transfromAddr").val(), $("#transtoAddr").val(), $("#transAmt").val()).send({from: accounts[0], value: web3.utils.toWei('0', 'ether'), gas:6385876}, function(error, transHash){
+                if(!error){
+                    $("#transferHash").html("Transaction Hash: " + transHash)
+                }else{
+                    console.log(error)
+                }
+            });
+        })
+
+        //Historial 10 Transacciones
+
+        var historial = "<br>";  
+        
+        $("#historialbtn").click(function(){
+
+            web3.eth.getBlock('latest').then(function(res){
+                
+                for(i = res.number; i > 0 ; i--){
+                    if((res.number - i) === 10){
+                        break
+                    }
+                    
+                    web3.eth.getBlock(i).then(r => historial = historial + "Transaction Hash: " + r.transactions + "<br>")
+                }
+            });
+
+            $("#historial").html(historial)
+        })
+
+        //Top owners
+        var owners = "<br>";
+        $("#ownersbtn").click(async function(){
+            const accounts = await ethereum.request({method: 'eth_requestAccounts'});
+            
+            web3.eth.getAccounts().then(function(res){
+                
+                for(i = 0; i < res.length; i++){
+                    var ac = res[i]
+                    console.log(ac)
+                    if(i < 10){
+                        PepeCoinContract.methods.balanceOf(ac).call({from: accounts[0]}, function(error, result){
+                            owners = owners + "Account: " + ac + " Balance: " + result + " PP <br>"
+                        });
+                    }else{
+                        break
+                    }
+                    
+                }
+            });
+
+            $("#owners").html(owners)
+        })
+
+
+    </script>
+</body>
+</html>
