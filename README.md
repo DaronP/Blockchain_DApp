@@ -6,7 +6,7 @@ Luis Delgado - 17187
 
 # Requisitos:
 
-  -web3.js
-  -Ganache Truffle
-  -Metamask
-  -http-server (testnet)
+ -  web3.js
+ -  Ganache Truffle
+ -  Metamask
+ -  http-server (testnet)
